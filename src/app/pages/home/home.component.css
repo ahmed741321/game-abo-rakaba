@@ -1,0 +1,121 @@
+.app {
+  background-color: rgb(211, 246, 235);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  align-items: anchor-center;
+  width: 164px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  margin-top: 6px;
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+}
+
+.content h1 {
+  margin-bottom: 4rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding:10px;
+
+}
+
+.footer div {
+  align-items: anchor-center;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+}
+.footer div img.arrow
+.footer div  small {
+  margin-bottom: 12px;
+}
+
+.footer div.right {
+  justify-content: flex-start;
+}
+
+.footer div.left {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.footer div.left img.arrow {
+  transform: scaleX(-1);
+}
+
+
+
+.chat-bubble {
+  position: relative;
+  max-width: 250px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* السهم في الأسفل إلى اليمين */
+.chat-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  /* يظهر السهم تحت الفقاعة */
+  left: 50px;
+  /* يحدد موقع السهم في اليمين */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 25px solid white;
+  /* لون السهم مطابق للفقاعة */
+}
+
+@keyframes moveFinger {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(400%);
+    /* يتحرك إلى أقصى اليمين داخل الصندوق */
+  }
+
+  100% {
+    transform: translateX(0);
+    /* يعود إلى اليسار */
+  }
+}
+
+.finger {
+  margin-top: -30px;
+  background-image: url('/assets/images/finger.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  animation: moveFinger 2s infinite alternate ease-in-out;
+}

@@ -1,0 +1,68 @@
+<div class="app">
+  <header class="header" (click)="goToInfo()">
+    <img src="/assets/images/1.png" class="user" alt="avatar" width="40px" />
+    <img
+      src="/assets/images/arrow.png"
+      class="arrow"
+      alt="arrow"
+      width="25px"
+    />
+    <small>&#64;yaa_salih</small>
+  </header>
+
+  <div class="content" (click)="playgame()">
+    <h1>Abo Rakaba !</h1>
+
+    <div class="chat-bubble">
+      Al Muratibat !
+      <br />
+      Best: 0
+    </div>
+
+    <div class="person">
+      <img src="/assets/animals/{{ selectedCharacter }}/all.png" alt="person" width="50%" />
+    </div>
+
+    <div style="position: relative">
+      <h2>yallah habibi !</h2>
+
+      <div class="finger"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="rgiht">
+      <img
+        (click)="goToCharacters()"
+        src="/assets/images/btn_lovestory.png"
+        class="user"
+        alt="avatar"
+        width="40px"
+      />
+      <img
+        src="/assets/images/arrow.png"
+        class="arrow"
+        alt="arrow"
+        width="25px"
+      />
+      <small>Characters</small>
+    </div>
+
+    <div class="left">
+      <img
+        (click)="goToSongs()"
+        src="/assets/images/btn_songs.png"
+        class="user"
+        alt="avatar"
+        width="40px"
+      />
+      <img
+        src="/assets/images/arrow.png"
+        class="arrow"
+        alt="arrow"
+        width="25px"
+      />
+      <small>Mood</small>
+    </div>
+  </footer>
+</div>

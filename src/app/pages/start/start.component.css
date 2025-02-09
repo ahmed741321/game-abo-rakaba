@@ -1,0 +1,19 @@
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('/assets/images/start_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headphone {
+  margin: 2rem auto;
+}
+
+h1 {
+  font-size: 1.2rem;
+  text-align: center;
+}

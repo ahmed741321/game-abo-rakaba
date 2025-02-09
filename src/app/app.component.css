@@ -1,0 +1,10 @@
+/* استيراد الخط المحلي */
+@font-face {
+  font-family: 'gameFont';
+  src: url('/assets/fonts/Blokletters-Balpen.ttf') format('truetype');
+}
+
+* {
+  font-family: 'gameFont';
+  text-align: center;
+}

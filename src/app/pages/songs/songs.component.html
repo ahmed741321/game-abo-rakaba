@@ -1,0 +1,52 @@
+<div class="app">
+  <header class="header">
+    <div class="row">
+      <img
+        src="/assets/images/btn_ads.png"
+        class="user"
+        alt="avatar"
+        width="40px"
+      />
+      <img src="/assets/images/arrow.png" class="arrow" alt="arrow" />
+      <small>Get 1.000 Coins</small>
+    </div>
+    <div class="coins">
+      <img src="/assets/images/icon_gold.png" width="30px" alt="coin" />
+      &nbsp; 0
+    </div>
+  </header>
+  <h1>- &nbsp; Mood &nbsp; -</h1>
+
+  <div class="content">
+    <label for="{{ mood.name }}" *ngFor="let mood of moods" class="mood-option">
+      <div>
+        <input
+          class="hidden-radio"
+          type="radio"
+          name="mood"
+          [id]="mood.name"
+          [value]="mood.id"
+          [(ngModel)]="selectedMood"
+          (change)="playAudio(mood.id)"
+          hidden
+        />
+        <label>{{ mood.name }}</label>
+      </div>
+
+      <!-- عرض الصورة فقط إذا كان الخيار محدد -->
+      <img
+        *ngIf="selectedMood == mood.id"
+        src="/assets/animals/5/head.png"
+        class="mood-image"
+      />
+    </label>
+
+
+    <audio #audioPlayer></audio>
+
+  </div>
+
+  <div class="footer">
+    <button class="ok" (click)="okBtn()" type="button">OK</button>
+  </div>
+</div>

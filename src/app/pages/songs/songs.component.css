@@ -1,0 +1,119 @@
+.app {
+  background-color: rgb(211, 246, 235);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header {
+  align-items: anchor-center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header div.row {
+  display: flex;
+  color: #d83939;
+
+}
+
+.header div.row img.arrow {
+  height: 19px;
+  width: 31px;
+}
+
+.header div.coins {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.content {
+  height: 65vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* يخفي الشريط في Firefox */
+  -ms-overflow-style: none;
+  /* يخفي الشريط في Edge و IE */
+
+}
+
+.scroll-container {
+  overflow: auto;
+  /* يسمح بالتمرير */
+  scrollbar-width: none;
+  /* يخفي الشريط في Firefox */
+  -ms-overflow-style: none;
+  /* يخفي الشريط في Edge و IE */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* يخفي الشريط في Chrome و Safari */
+}
+
+button.ok {
+  width: 200px;
+  height: 60px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(184, 225, 212);
+  font-size: x-large;
+}
+
+.mood-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 99%;
+  height: 120px;
+  border: 2px solid #949494;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  background: #c7f6c4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+.mood-option:hover {
+  border-color: #007bff;
+}
+
+.mood-option.selected {
+  border-color: #007bff;
+  background: #e3f2fd;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.hidden-radio {
+  display: none;
+}
+
+.mood-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mood-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.mood-image {
+  width: 52px;
+  height: 52px;
+  margin-top: 5px;
+}

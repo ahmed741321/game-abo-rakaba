@@ -1,0 +1,91 @@
+.app {
+  background-color: rgb(211, 246, 235);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header {
+  align-items: anchor-center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header div.row {
+  display: flex;
+  color: #d83939;
+
+}
+
+.header div.row img.arrow {
+  height: 19px;
+  width: 31px;
+}
+
+.header div.coins {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* يخفي الشريط في Chrome و Safari */
+}
+
+button.ok {
+  width: 200px;
+  height: 60px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(184, 225, 212);
+  font-size: x-large;
+}
+
+
+
+.content {
+  height: 75vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* يخفي الشريط في Firefox */
+  -ms-overflow-style: none;
+  /* يخفي الشريط في Edge و IE */
+
+}
+
+
+.goToInstagram {
+  width: 180px;
+  height: 40px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: x-large;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  color: #090909;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+
+}
+
+.goToInstagram a {
+  text-decoration: none;
+  color: #090909;
+  cursor: pointer;
+}
